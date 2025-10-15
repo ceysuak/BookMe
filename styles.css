@@ -1,0 +1,131 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #F8F6F0;
+  background-color: #1A1F36;
+  margin:0;
+  height: 100dvh;
+}
+
+.hero{
+  
+  background-image: url(https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3RlbHxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000);
+   
+  background-size: cover;
+  background-position: center;
+  height: 50vh; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #F8F6F0; 
+  text-shadow:0.25rem 0.25rem 0.25rem #1A1F36;
+  position: relative;
+
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  backdrop-filter: blur(0.2rem);
+  position: fixed;
+  z-index: 1;
+  height:3rem;
+}
+.navlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 0.5rem;
+}
+
+.alink{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  text-shadow:0.25rem 0.25rem 0.25rem #1A1F36;
+}
+.alink:hover{
+ transform: scale(1.1);
+ transform-origin: center;
+ background-color: #1a1f364f;
+ padding: 0.1rem;
+ border-radius: 0.5rem;
+}
+ img{
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-items: center;
+  gap:1rem;
+  padding: 0.5rem;
+}
+h2,h3,p{
+  text-align: center;
+}
+.card-item{
+  background-color: #343f70;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+.card-item:hover{
+  transform: scale(1.05);
+  background-color: #444d72;
+  cursor:pointer;
+}
+.view-hotel{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #1A1F36;
+  color: #F8F6F0;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(26,31,54,0.15);
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.view-hotel:hover {
+  background-color: #343f70;
+  color: #FFD700;
+  transform: scale(1.05);
+  border-bottom: 2px solid #FFD700;
+  transition: border-bottom 0.2s;
+  cursor: pointer;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social >*{
+
+  list-style: none;
+  color: #F8F6F0;
+  text-decoration: none;
+}
+
+@media (max-width: 1300px) {
+  .card-container {
+    justify-content: center;
+  }
+}
