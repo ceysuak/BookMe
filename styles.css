@@ -64,6 +64,7 @@ body {
   width: 15rem;
   object-fit: cover;
   border-radius: 1rem;
+  overflow:hidden;
 }
 .card-container{
   display: flex;
@@ -128,4 +129,5 @@ ul{
   .card-container {
     justify-content: center;
   }
+
 }
